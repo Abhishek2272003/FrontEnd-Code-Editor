@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>makeMyCode</title>
+    <link rel="icon" type="image/x-icon" href="favicon.avif" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/matchtags.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/matchbrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/comment/comment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/clike/clike.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <button id="openModalBtn">Developer</button>
+     <h1> HTML/CSS/javascript Bootcamp</h1>
+      <img
+      id="enablemod"
+      class="enablemod"
+      src="icons8-half-moon-32.png"
+      alt=""
+      />
+      <button id="run" onclick="run()">Run</button>
+    </nav>
+    <div class="editor-structure">
+      <div id="htmlTextArea" class="codeTextArea">
+        <img class="html-file" src="icons8-html-filetype.gif" alt="" />
+      </div>
+      <div id="cssTextArea" class="codeTextArea">
+        <img class="css-file" src="icons8-code.gif" alt="" />
+      </div>
+      <div id="jsTextArea" class="codeTextArea">
+        <img class="javascript-file" src="icons8-javascript.gif" alt="" />
+      </div>
+      <iframe id="outputTextArea" class="outputTextArea"></iframe>
+    </div>
+
+    <div id="modalOverlay" class="modal-overlay">
+      <div id="modalContent" class="modal-content">
+        <span id="closeModalBtn" class="close-modal-btn">&times;</span>
+        <div class="abhishek"></div>
+        <h2>Abhishek Sain</h2>
+        <p>Introducing my Front-End Code Editor - A powerful, user-friendly tool for crafting HTML, CSS, and JavaScript code. Enjoy real-time previews, auto-completion, and responsive design for seamless coding on any device. Boost productivity and unleash your creativity with our versatile editor. Join now and elevate your web development experience.</p>
+        <h1>Happy coding!</h6>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
